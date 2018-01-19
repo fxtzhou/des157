@@ -1,56 +1,70 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-
-/* HTML5 display-role reset for older browsers */
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
 body {
-  line-height: 1;
+  margin: auto;
+  width: 100%;
 }
 
-blockquote, q {
-  quotes: none;
+header {
+  width: 100%;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+footer {
+  background-color: #7d7865;
+  clear: both;
+  text-align: center;
+  vertical-align: middle;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
 }
 
 #mySketch {
   width: 800px;
   height: 250px;
-  background-color: grey;
+  background-color: none;
+  margin: auto;
+  padding: 0px 0px 10px 0px;
+}
+
+div {
+  max-width: 800px;
   margin: auto;
 }
+
+#images {
+  vertical-align: middle;
+}
+
+aside {
+  width: 226px;
+  height: 300px;
+  float: left;
+  text-align: center;
+  padding-top: 15px;
+}
+
+section {
+  width: 227px;
+  height: 300px;
+  padding: 15px;
+  border: 10px;
+  float: left;
+  border-style: solid;
+  border-width: thick;
+  border-color: #9c9a8b;
+  text-align: center;
+}
+
+
+/*Typography */
 
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 100;
-  font-size: 50px;
-  text-align: center;
+  font-size: 25px;
+  text-align: left;
   text-transform: uppercase;
   color: #000;
+  background-color: #7d7865;
 }
 
 h2 {
@@ -82,6 +96,7 @@ nav li {
   font-family: 'Helvetica', sans-serif;
   font-weight: lighter;
   font-size: 14px;
+  line-height: 16px;
   color: #000;
   text-align: justify;
 }
@@ -96,53 +111,14 @@ a {
 }
 
 a:hover {
-  color: #9c9a8b;
+  color: white;
 }
 
-div {
-  max-width: 800px;
-  min-height: 300px;
-  margin: auto;
-}
-
-#name {
-  width: 226px;
-  height: 300px;
-  padding: 15px;
-  border: 10px;
-  float: left;
-  border-style: solid;
-  border-width: thick;
-  border-color: #9c9a8b;
-  text-align: center;
-}
-
-section {
-  width: 227px;
-  height: 300px;
-  padding: 15px;
-  border: 10px;
-  float: left;
-  border-style: solid;
-  border-width: thick;
-  border-color: #9c9a8b;
-  text-align: center;
-}
-
-footer {
-  box-sizing: border-box;
-  clear: both;
-  height: 100px;
-  width: 800px;
-  /*background-color: #9c9a8b;*/
-}
-
-footer p {
+footer a {
   font-family: 'Helvetica', sans-serif;
   font-weight: normal;
   text-transform: uppercase;
   font-size: 14px;
   color: #000;
-  text-align: center;
   vertical-align: middle;
 }
