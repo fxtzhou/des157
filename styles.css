@@ -7,6 +7,14 @@ header {
   width: 100%;
 }
 
+#mySketch {
+  width: 800px;
+  height: 250px;
+  background-color: none;
+  margin: auto;
+  padding: 0px 0px 10px 0px;
+}
+
 footer {
   background-color: #7d7865;
   clear: both;
@@ -17,21 +25,13 @@ footer {
   width: 100%;
 }
 
-#mySketch {
-  width: 800px;
-  height: 250px;
-  background-color: none;
-  margin: auto;
-  padding: 0px 0px 10px 0px;
-}
-
 div {
-  float: left;
+  max-width: 800px;
   margin: auto;
 }
-
 
 aside {
+  margin: auto;
   width: 226px;
   height: 300px;
   float: left;
@@ -40,6 +40,7 @@ aside {
 }
 
 section {
+  margin: auto;
   width: 227px;
   height: 300px;
   padding: 15px;
