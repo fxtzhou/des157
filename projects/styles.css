@@ -26,10 +26,14 @@ footer {
 }
 
 div {
-  float: left;
-  margin: auto;
+max-width: 800px;
+margin: auto;
+padding-bottom: 20px;
 }
 
+#images {
+  vertical-align: middle;
+}
 
 aside {
   width: 226px;
@@ -67,15 +71,15 @@ h1 {
 h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 100;
-  font-size: 20px;
+  font-size: 30px;
+  font-transform: uppercase;
   color: #000;
 }
 
 h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 100;
-  font-size: 30px;
-  text-align: center;
+  font-size: 20px;
   text-transform: uppercase;
   color: #9c9a8b;
 }
@@ -84,8 +88,14 @@ h4 {
   font-family: 'Helvetica', sans-serif;
   font-size: 15px;
   font-weight: lighter;
-  text-align: center;
   text-transform: uppercase;
+  color: #000;
+}
+
+li {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 12px;
+  font-weight: lighter;
   color: #000;
 }
 
