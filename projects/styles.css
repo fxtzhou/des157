@@ -65,7 +65,7 @@ h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 100;
   font-size: 30px;
-  font-transform: uppercase;
+  text-transform: uppercase;
   color: #000;
 }
 
@@ -78,8 +78,9 @@ h3 {
 }
 
 h4 {
-  font-family: 'Helvetica', sans-serif;
-  font-size: 15px;
+  font-family: 'Montserat', sans-serif;
+  font-weight: 100;
+  font-size: 16px;
   font-weight: lighter;
   text-transform: uppercase;
   color: #000;
@@ -105,9 +106,22 @@ a {
   font-family: 'Helvetica', sans-serif;
   font-weight: lighter;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 14px;
   text-decoration: none;
+  color: #9c9a8b;
+}
+
+p {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+  text-transform: none;
   color: #000;
+}
+
+img {
+  float: left;
+  padding: 7px;
 }
 
 a:hover {
