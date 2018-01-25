@@ -111,11 +111,12 @@ a {
   color: #9c9a8b;
 }
 
-p {
+a {
   font-family: 'Helvetica', sans-serif;
-  font-size: 14px;
   font-weight: lighter;
   text-transform: none;
+  font-size: 14px;
+  text-decoration: none;
   color: #000;
 }
 
