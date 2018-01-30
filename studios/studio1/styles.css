@@ -39,6 +39,8 @@ form {
 }
 
 label {
+  font-family: "Arima Madurai", sans-serif;
+  font-size: : 12px;
   text-align: right;
   display: inline-block;
   width: 75px;
@@ -47,6 +49,8 @@ label {
 }
 
 input {
+    font-family: "Arima Madurai", sans-serif;
+    font-size: : 12px;
   padding: 5px;
   color: white;
   font-size: 10px;
@@ -65,7 +69,6 @@ input[type="text"] {
 }
 
 input[type="reset"], input[type="submit"] {
-  font-family: "Arima Madurai", sans-serif;
   width: 150px;
   border-radius: 5px;
   margin: 5px;
