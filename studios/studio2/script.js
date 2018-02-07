@@ -27,11 +27,6 @@ planner.addEventListener('click', function() {
   obj.innerHTML = "<img src='images/planneroverlay.png'>";
 });
 
-//close
-close.addEventListener('click', function() {
-  overlay.style.display = "none";
-});
-
 //tarot events
 
 tarot.addEventListener('click', function() {
@@ -39,10 +34,6 @@ tarot.addEventListener('click', function() {
   t.innerHTML = "Tarot Card";
   i.innerHTML = "'La Papesse' or 'The Priestess.' It usually means hidden powers, intuition, or the subconscious mind. It reminds me of untapped potential whenever I'm going through hard times and that it'll pass like all things - good or bad.";
   obj.innerHTML = "<img src='images/tarotoverlay.png'>";
-});
-
-close.addEventListener('click', function() {
-  overlay.style.display = "none";
 });
 
 //tape events
