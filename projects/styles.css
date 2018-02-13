@@ -1,6 +1,9 @@
 body {
   margin: auto;
   width: 100%;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 12px;
+  font-weight: lighter;
 }
 
 header {
@@ -64,7 +67,7 @@ h2 {
   font-weight: 100;
   font-size: 30px;
   text-transform: uppercase;
-  color: #000;
+  color: #9c9a8b;
 }
 
 h3 {
@@ -81,7 +84,7 @@ h4 {
   font-size: 16px;
   font-weight: lighter;
   text-transform: uppercase;
-  color: #000;
+  color: #9c9a8b;
 }
 
 li {
@@ -128,7 +131,7 @@ p {
   font-family: 'Helvetica', sans-serif;
   font-weight: lighter;
   text-transform: none;
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: none;
   color: #000;
 }
@@ -136,6 +139,10 @@ p {
 img {
   float: left;
   padding: 7px;
+}
+
+.img-circle {
+    border-radius: 50%;
 }
 
 a:hover {
