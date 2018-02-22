@@ -1,0 +1,63 @@
+<doc type=HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Meet Me In The Library</title>
+	  <!-- AniCollection.css library -->
+    <link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Simple sentence-->
+    <header class="fadeInDown animated">
+      <h1>How Would You Answer This?</h1>
+      </header>
+
+
+
+
+    <div id="poll" class="fadeInUp animated">
+        What Is Your Ethnicity?
+    </div>
+
+    <div id="overlay">
+    <p>These answers are sometimes the only ones provided when assessing ethnicity.
+      It becomes very exclusive to people who may not identify with any, or with multiple.
+      By picking 'other', they're placed under an umbrella of diversities undeserving
+      of their own category, which detracts from the user experience. This can be
+      present in the form of surveys, sign-up forms, and the like. How can we as
+      designers design to be more inclusive?</p> <h2>Inclusive Design.</h2>
+       <div id="close">&otimes;</div>
+    </div>
+      <div id ="container">
+  <section>
+    <button id="answer1" data-anijs="if:click, do: rollOut animated, to: $children #container">
+        White
+    </button>
+
+       <button id="answer2" data-anijs="if:click, do: zoomOut animated, to: $children #container">
+        Black
+    </button>
+
+       <button id="answer3" data-anijs="if:click, do: flipOutX animated, to: $children #container">
+        Brown
+    </button>
+
+       <button id="answer4" data-anijs="if:click, do: slideOutRight animated, to: $children #container">
+     Other
+
+    </button>
+
+    </section>
+</div>
+          <footer>
+            <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a> |
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+          </footer>
+
+          <script src="https://anijs.github.io/lib/anijs/anijs.js"></script>
+        <script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
