@@ -1,13 +1,12 @@
-
-
 /*General Styles */
+
 body {
   font-family: 'Helvetica';
   background-color: #000;
   color: white;
 }
 
-#poll{
+#poll {
   font-family: 'Helvetica';
   font-weight: lighter;
   font-size: 24px;
@@ -27,7 +26,7 @@ button {
   color: white;
 }
 
-section{
+section {
   margin-top: 10px;
 }
 
@@ -41,7 +40,6 @@ section{
 /*Typography */
 
 footer {
-  background-color: none;
   clear: both;
   text-align: center;
   vertical-align: middle;
@@ -65,7 +63,7 @@ p {
   font-weight: lighter;
 }
 
-footer a {
+a {
   font-family: 'Helvetica', sans-serif;
   font-weight: lighter;
   text-transform: uppercase;
