@@ -84,7 +84,6 @@ h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 100;
   font-size: 30px;
-  text-align: center;
   text-transform: uppercase;
   color: #9c9a8b;
 }
@@ -93,7 +92,6 @@ h4 {
   font-family: 'Helvetica', sans-serif;
   font-size: 15px;
   font-weight: lighter;
-  text-align: center;
   text-transform: uppercase;
   color: #000;
 }
