@@ -60,7 +60,7 @@
     background-color: #24cc73;
   }
   100% {
-    background-color: #2493cc;
+    background-color: #24aecc;
   }
 }
 
@@ -70,8 +70,8 @@ html {
 }
 
 body {
-  transition: background-color 1s linear;
-  animation: colorshift 15s infinite;
+  transition: background-color 5s linear;
+  animation: colorshift 30s infinite;
   transition-timing-function: ease-in;
   color: white;
   text-align: center;
