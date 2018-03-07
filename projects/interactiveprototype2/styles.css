@@ -1,0 +1,173 @@
+/* @keyframes colorshift {
+  0% {
+    color: #24aecc;
+  }
+  11% {
+    color: #245bcc
+  }
+  22% {
+    color: #3c24cc;
+  }
+  33% {
+    color: #9324cc;
+  }
+  44% {
+    color: #cc2478;
+  }
+  55% {
+    color: #cc2424;
+  }
+  66% {
+    color: #cc5b24;
+  }
+  77% {
+    color: #ccbe24;
+  }
+  88% {
+    color: #24cc73;
+  }
+  100% {
+    color: #2493cc;
+  }
+} */
+
+@keyframes colorshift {
+  0% {
+    background-color: #24aecc;
+  }
+  11% {
+    background-color: #245bcc
+  }
+  22% {
+    background-color: #3c24cc;
+  }
+  33% {
+    background-color: #9324cc;
+  }
+  44% {
+    background-color: #cc2478;
+  }
+  55% {
+    background-color: #cc2424;
+  }
+  66% {
+    background-color: #cc5b24;
+  }
+  77% {
+    background-color: #ccbe24;
+  }
+  88% {
+    background-color: #24cc73;
+  }
+  100% {
+    background-color: #2493cc;
+  }
+}
+
+html {
+  height: 100%;
+
+}
+
+body {
+  transition: background-color 1s linear;
+  animation: colorshift 15s infinite;
+  transition-timing-function: ease-in;
+  color: white;
+  text-align: center;
+  font-family: 'Segoe UI', 'Futura', sans-serif;
+  position: relative;
+  margin: 0;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+  height: 100% !important;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.main {
+  float: left;
+  width: 100%;
+  margin: 0 auto;
+}
+
+article {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  margin:0 auto;
+}
+
+#revealAnim img {
+  transition: transform .6s .9s;
+}
+
+.back {
+  transform: translate3d(-40%, 0, 0);
+}
+
+.front {
+  transform: translate3d(61.6%, 0, 0);
+}
+
+.side {
+  transform: translate3d(-338%, 0, 0);
+}
+
+.viewing-page-2 #revealAnim img {
+  transform: translate3d(0, 0, 0);
+}
+
+/*Typography */
+
+a {
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  width: 1.5in;
+  padding: 16px;
+  margin-top: 2px;
+  text-align: center;
+  display: inline-block;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+h1 {
+  margin: auto;
+  font-size: 5vw;
+  line-height: 1;
+  align-items: center;
+  font-weight: bold;
+  width: 50%;
+  margin-bottom: 1.5%;
+}
+
+h1 span {
+  font-family: 'Abril Fatface', 'Georgia', sans-serif;
+  font-weight: normal;
+  /* transition: color 1s linear;
+  animation: colorshift 15s infinite; */
+}
+
+h3 {
+  width: 50%;
+  font-size: 3vw;
+  line-height: 1;
+  align-items: center;
+  font-weight: bold;
+}
+
+h3 span {
+  font-family: 'Abril Fatface', 'Georgia', sans-serif;
+  font-weight: normal;
+  /* transition: color 1s linear;
+  animation: colorshift 15s infinite;
+  transition-timing-function: ease-in; */
+}
