@@ -1,0 +1,116 @@
+@keyframes colorshift {
+  0% {
+    color: #24aecc;
+  }
+  11% {
+    color: #245bcc
+  }
+  22% {
+    color: #3c24cc;
+  }
+  33% {
+    color: #9324cc;
+  }
+  44% {
+    color: #cc2478;
+  }
+  55% {
+    color: #cc2424;
+  }
+  66% {
+    color: #cc5b24;
+  }
+  77% {
+    color: #ccbe24;
+  }
+  88% {
+    color: #24cc73;
+  }
+  100% {
+    color: #24aecc;
+  }
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  color: black;
+}
+
+section {
+  margin: auto;
+  width: 50%;
+  margin-bottom: 5%;
+}
+
+article {
+  margin: auto;
+  width: 50%;
+  margin-bottom: 5%;
+}
+
+.profile {
+  margin: 25px;
+  float: left;
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  background: grey;
+  transition: all 500ms ease-in-out;
+}
+
+footer a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  margin-bottom: -3px;
+  margin-top: -3px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  border-radius: 50px;
+  border-color: white;
+  width: 1.5in;
+  padding: 16px;
+  margin-top: 2px;
+  text-align: center;
+  display: inline-block;
+}
+
+h1 {
+  font-family: 'Lobster', sans-serif;
+  font-size: 3vw;
+  transition: color 1s linear;
+  animation: colorshift 15s infinite;
+  transition-timing-function: ease-in;
+}
+
+h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.5vw;
+}
+
+h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1vw;
+  transition: color 1s linear;
+  animation: colorshift 15s infinite;
+  transition-timing-function: ease-in;
+}
+
+p {
+  font-size: 1vw;
+  line-height: 150%;
+}
