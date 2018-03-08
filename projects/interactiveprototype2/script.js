@@ -6,7 +6,7 @@ CanvasJS.addColorSet("theme", [
 "#9324cc",
 "#cc2478",
 "#cc2424",
-"#cc5b24",
+"#ffffff",
 "#ccbe24",
 "#24cc73",
 "#2493cc",
@@ -16,7 +16,7 @@ CanvasJS.addColorSet("theme", [
     colorSet: "theme",
     animationEnabled: true,
     animationDuration: 1500,
-    backgroundColor:'',
+    backgroundColor:'grey',
     data: [{
       indexLabelFontColor: "white",
       type: "pie",

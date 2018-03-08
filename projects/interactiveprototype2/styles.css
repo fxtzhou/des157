@@ -1,4 +1,4 @@
-/* @keyframes colorshift {
+/* @keyframes colorshift2 {
   0% {
     color: #24aecc;
   }
@@ -70,12 +70,12 @@ html {
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
   transition: background-color 5s linear;
   animation: colorshift 30s infinite;
   transition-timing-function: ease-in;
   color: white;
   text-align: center;
-  font-family: 'Segoe UI', 'Futura', sans-serif;
   position: relative;
   margin: 0;
   height: 100%;
@@ -87,6 +87,11 @@ body {
   height: 100%;
   margin: 0 auto;
   overflow: hidden;
+}
+
+
+.page {
+  top: 2%;
 }
 
 .main {
@@ -101,6 +106,49 @@ article {
   background-color: white;
   margin:0 auto;
 }
+
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  display: block;
+  padding: 7px;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.25);
+  font-weight: bold;
+  font-size: 13px;
+  color: #000;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+
+#page6{
+  top: 25%;
+  left: 5%;
+}
+
+#page6 article{
+  float: right;
+  margin-right: 200px;
+}
+
+#page7{
+  top: 25%;
+  left: 5%;
+}
+
+#page7 article{
+  float: right;
+  margin-right: 200px;
+}
+
 
 #revealAnim img {
   transition: transform .6s .9s;
@@ -140,9 +188,10 @@ a:visited {
 }
 
 h1 {
+  font-family: 'Roboto', sans-serif;
   margin: auto;
   font-size: 5vw;
-  line-height: 1;
+  line-height: 0.9;
   align-items: center;
   font-weight: bold;
   width: 50%;
@@ -150,10 +199,8 @@ h1 {
 }
 
 h1 span {
-  font-family: 'Abril Fatface', 'Georgia', sans-serif;
-  font-weight: normal;
-  /* transition: color 1s linear;
-  animation: colorshift 15s infinite; */
+  font-family: 'Lobster', 'Georgia', sans-serif;
+  font-size: 5.5vw;
 }
 
 h3 {
@@ -165,9 +212,6 @@ h3 {
 }
 
 h3 span {
-  font-family: 'Abril Fatface', 'Georgia', sans-serif;
-  font-weight: normal;
-  /* transition: color 1s linear;
-  animation: colorshift 15s infinite;
-  transition-timing-function: ease-in; */
+  font-family: 'Lobster', 'Georgia', sans-serif;
+
 }
