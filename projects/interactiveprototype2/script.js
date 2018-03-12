@@ -29,7 +29,7 @@ CanvasJS.addColorSet("theme", [
         {y: 3.4,label: "Black"},
         {y: 8.1,label: "Hispanic"},
         {y: 1,label: "Native American"},
-         {y: 0.8,label: "Hawiian/Pacific Islander"},
+        {y: 0.8,label: "Hawiian/Pacific Islander"},
         {y: 60.4,label: "White"},
         {y: 2.2,label: "Prefer not to say"},
         {y: 2.4,label: "Other"}
