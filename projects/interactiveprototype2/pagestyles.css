@@ -1,60 +1,66 @@
 @keyframes colorshift {
   0% {
-    color: #24aecc;
+    background-color: #24aecc;
   }
   11% {
-    color: #245bcc
+    background-color: #245bcc
   }
   22% {
-    color: #3c24cc;
+    background-color: #3c24cc;
   }
   33% {
-    color: #9324cc;
+    background-color: #9324cc;
   }
   44% {
-    color: #cc2478;
+  background-color: #cc2478;
   }
   55% {
-    color: #cc2424;
+  background-color: #cc2424;
   }
   66% {
-    color: #cc5b24;
+  background-color: #cc5b24;
   }
   77% {
-    color: #ccbe24;
+  background-color: #ccbe24;
   }
   88% {
-    color: #24cc73;
+  background-color: #24cc73;
   }
   100% {
-    color: #24aecc;
+  background-color: #24aecc;
   }
 }
 
 body {
+  transition: color 1s linear;
+  animation: colorshift 15s infinite;
+  transition-timing-function: ease-in;
   font-family: 'Roboto', sans-serif;
   color: black;
 }
 
 section {
-  background-color:
-  margin: auto;
-  width: 50%;
-  margin-bottom: 5%;
+  margin: 0 auto;
+  background-color: white;
+  width: 75%;
 }
 
 article {
+  background-color: white;
   margin: auto;
   width: 50%;
   margin-bottom: 5%;
 }
 
-.profile {
-  margin: 25px;
+.profile{
+margin: auto;
+float: left;
+}
+
+img {
   float: left;
-  background-color: white;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
 }
 
@@ -91,9 +97,6 @@ a {
 h1 {
   font-family: 'Lobster', sans-serif;
   font-size: 3vw;
-  transition: color 1s linear;
-  animation: colorshift 15s infinite;
-  transition-timing-function: ease-in;
 }
 
 h2 {
@@ -104,9 +107,6 @@ h2 {
 h3 {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1vw;
-  transition: color 1s linear;
-  animation: colorshift 15s infinite;
-  transition-timing-function: ease-in;
 }
 
 p {
