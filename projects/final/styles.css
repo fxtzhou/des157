@@ -102,12 +102,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.logo {
-  position: fixed;
-  left: 10px;
-  margin-top: 5px;
-}
-
 .wrapper {
   height: 100% !important;
   height: 100%;
