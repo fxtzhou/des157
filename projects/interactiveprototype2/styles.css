@@ -138,15 +138,38 @@ footer{
 
 
 #page6{
-  top: 25%;
+  top: 15%;
   left: 5%;
 }
 
 #page7{
-  top: 25%;
+  top: 15%;
   left: 5%;
 }
 
+.arrow {
+position: fixed;
+bottom: 75px;
+right: 7px;
+}
+
+.bounce {
+  -moz-animation: bounce 2s;
+  -webkit-animation: bounce 2s;
+  animation: bounce 2s;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
 
 #revealAnim img {
   transition: transform .6s .9s;
@@ -161,10 +184,14 @@ footer{
 }
 
 .side {
-  transform: translate3d(-338%, 0, 0);
+  transform: translate3d(-300%, 0, 0);
 }
 
 .viewing-page-2 #revealAnim img {
+  transform: translate3d(0, 0, 0);
+}
+
+.viewing-page-5 #revealAnim img {
   transform: translate3d(0, 0, 0);
 }
 
@@ -202,8 +229,8 @@ h1 span {
 }
 
 h3 {
-
-  width: 50%;
+  text-align: left;
+  width: 40%;
   font-size: 3vw;
   line-height: 1;
   font-weight: bold;

@@ -38,5 +38,8 @@ CanvasJS.addColorSet("theme", [
     }]
   });
   chart.render();
+}
 
+function bounceArrow() {
+  setTimeout(function(.bounce, 3000);
 }
