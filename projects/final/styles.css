@@ -182,6 +182,22 @@ footer {
   }
 }
 
+@keyframes scale {
+  from {
+    width: 250px;
+  }
+  to {
+    width: 300px;
+  }
+}
+
+.grow {
+  animation-duration: 1s;
+  animation-name: scale;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
 #revealAnim img {
   transition: transform .6s .9s;
 }
@@ -195,7 +211,7 @@ footer {
 }
 
 .side {
-  transform: translate3d(-300%, 0, 0);
+  transform: translate3d(-400%, 0, 0);
 }
 
 .viewing-page-3 #revealAnim img {
