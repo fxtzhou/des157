@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tara Parker-Essig</title>
+  <meta name="viewport" content="width=device-width , initial-scale= 1.0">
+  <link href="https://cdn.jsdelivr.net/npm/normalize.css@7.0.0/normalize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400:700|Roboto+Condensed|Lobster" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link href='pagestyles.css' rel='stylesheet'>
+  <style>
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+      font-family: 'Roboto', Helvetica, sans-serif;
+    }
+
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 7px 16px;
+      text-decoration: none;
+    }
+
+    .dropdown {
+      float: right;
+      overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+      cursor: pointer;
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 10px 12px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .navbar a:hover,
+    .dropdown:hover .dropbtn,
+    .dropbtn:focus {
+      background-color: skyblue;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .show {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn" onclick="myFunction()">More Info
+    <i class="fa fa-caret-down"></i>
+  </button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="https://vivmokona.github.io/des157/final/index.html">Home</a>
+        <a href="https://fxtzhou.github.io/des157/projects/final/about.html">About</a>
+        <a class="active" href="https://vivmokona.github.io/des157/final/profile/form.html">Profile</a>
+        <a href="https://vivmokona.github.io/des157/final/contact/index.html">Contact</a>
+      </div>
+    </div>
+  </div>
+  <section>
+    <div class="profile">
+      <img src="photos/tara.jpg" width="200px">
+      <h1>Tara Parker-Essig</h1>
+      <h2>UI/UX Design</h2>
+      <h2>94611</h2>
+      <h4><a style="padding: 8px;   border-radius: 50px;   transition: color 20s linear;
+        animation: colorshift 30s infinite;
+        transition-timing-function: ease-in;" href="https://taramakes.com">Portfolio</a></h4>
+      <h4><a style="padding: 8px;   border-radius: 50px;   transition: color 20s linear;
+        animation: colorshift 30s infinite;
+        transition-timing-function: ease-in;" href="https://www.instagram.com/taramakes"> <i class="fab fa-instagram"></i></a></h4>
+    </div>
+    </div>
+
+    <article>
+      <h3>What intrigued you to Design & why did you choose the field you are in now?</h3>
+      <p>I became interested in Design after reading just the first chapter of "The Design Of Everyday Things" by Don Norman early in my freshman year of college. I was an undeclared major at the time and the book resonated with me deeply. I originally wanted
+        to work in industrial product design, but the field is slow-moving, full of unsustainable plastic s***, and male-dominated. Oh and Davis doesn't have an emphasis in it yet. Despite some parallel sustainability and diversity issues in digital product
+        design, I feel more at home working on the web and have been able to push past certain insecurities around my own intelligence and begin to learn not only how to conduct UX research but also how to code.</p>
+
+      <h3>What have been your biggest struggles of your career?</h3>
+      <p>One of the biggest struggles of my career has been coping with mental health interruptions while maintaining excellence school and work. As someone who identifies as agender, juggling the gendered expectations of working in tech has also been complicated
+        and challenging.</p>
+
+      <h3>What have your experiences been like as a person of color in the design industry? Does those experiences shape how you solve design-related problems?</h3>
+      <p>N/A</p>
+
+      <h3>How can design be more accommodating to underrepresented populations of people?</h3>
+      <p>Design can be more accommodating to underrepresented populations of people by using the research tools we already have to improve conversion rate and interaction experiences. By actively seeking out marginalized groups and asking for their opinions
+        and experiences, dumb ideas are more likely to get caught and filtered out. We can also improve diversity of product teams and the sense of safety and acceptance people on the team feel. When someone from your own project or organization can point
+        out something before you even reach the research stage, it saves everyone time, money, and headache/heartache.</p>
+    </article>
+  </section>
+
+  <script>
+    /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    }
+  </script>
+
+  <footer>
+    <a href="https://fxtzhou.github.io/des157/projects/final/about.html">About</a>
+    <a href="https://vivmokona.github.io/des157/final/contact/index.html">Contact</a>
+    <a href="">Privacy Policy</a>
+    <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+  </footer>
+
+</body>
+
+</html>
