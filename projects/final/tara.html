@@ -10,141 +10,117 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   <link href='pagestyles.css' rel='stylesheet'>
   <style>
-    .navbar {
-      overflow: hidden;
-      background-color: #333;
-      font-family: 'Roboto', Helvetica, sans-serif;
-    }
+  /* Hamburger Nav */
 
-    .navbar a {
-      float: left;
-      font-size: 16px;
-      color: white;
-      text-align: center;
-      padding: 7px 16px;
-      text-decoration: none;
-    }
-
-    .dropdown {
-      float: right;
-      overflow: hidden;
-    }
-
-    .dropdown .dropbtn {
-      cursor: pointer;
-      font-size: 16px;
-      border: none;
-      outline: none;
-      color: white;
-      padding: 10px 12px;
-      background-color: inherit;
-      font-family: inherit;
-      margin: 0;
-    }
-
-    .navbar a:hover,
-    .dropdown:hover .dropbtn,
-    .dropbtn:focus {
-      background-color: skyblue;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
       z-index: 1;
-    }
+      top: 0;
+      right: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+  }
 
-    .dropdown-content a {
-      float: none;
-      color: black;
-      padding: 12px 16px;
+  .sidenav a {
+      padding: 8px 8px 8px 32px;
       text-decoration: none;
+      font-size: 25px;
+      color: #818181;
       display: block;
-      text-align: left;
-    }
+      transition: 0.3s;
+  }
 
-    .dropdown-content a:hover {
-      background-color: #ddd;
-    }
+  .sidenav a:hover {
+      color: #f1f1f1;
+  }
 
-    .show {
-      display: block;
-    }
+  .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+  }
+
+  #main {
+      position: absolute;
+      top: -15px;
+      right: 0;
+      transition: margin-left .5s;
+      padding: 16px;
+  }
+
+  /*Changes inside nav*/
+
+  @media screen and (max-height: 450px) {
+      .sidenav {
+          padding-top: 15px;
+      }
+      .sidenav a {
+          font-size: 18px;
+      }
+  }
+
+
   </style>
 </head>
 
 <body>
-  <div class="navbar">
-    <div class="dropdown">
-      <button class="dropbtn" onclick="myFunction()">More Info
-    <i class="fa fa-caret-down"></i>
-  </button>
-      <div class="dropdown-content" id="myDropdown">
-        <a href="https://vivmokona.github.io/des157/final/index.html">Home</a>
-        <a href="https://fxtzhou.github.io/des157/projects/final/about.html">About</a>
-        <a class="active" href="https://vivmokona.github.io/des157/final/profile/form.html">Profile</a>
-        <a href="https://vivmokona.github.io/des157/final/contact/index.html">Contact</a>
-      </div>
-    </div>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a class="active" href="https://vivmokona.github.io/des157/final/index.html">Home</a>
+     <a href="https://fxtzhou.github.io/des157/projects/final/index.html">About</a>
+    <a href="profile/form.html">Profile</a>
+    <a href="contact/index.html">Contact</a>
   </div>
+
+  <div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  </div>
+
   <section>
     <div class="profile">
-      <img src="photos/tara.jpg" width="200px">
-      <h1>Tara Parker-Essig</h1>
-      <h2>UI/UX Design</h2>
-      <h2>94611</h2>
-      <h4><a style="padding: 8px;   border-radius: 50px;   transition: color 20s linear;
-        animation: colorshift 30s infinite;
-        transition-timing-function: ease-in;" href="https://taramakes.com">Portfolio</a></h4>
-      <h4><a style="padding: 8px;   border-radius: 50px;   transition: color 20s linear;
-        animation: colorshift 30s infinite;
-        transition-timing-function: ease-in;" href="https://www.instagram.com/taramakes"> <i class="fab fa-instagram"></i></a></h4>
-    </div>
-    </div>
+    <img src="photos/tara.jpg" width="200px">
+    <h1>Tara Parker-Essig</h1>
+    <h2>UI/UX Design</h2>
+    <h2>94611</h2>
+    <h2><a href="taramakes.com">Portfolio</a></h2>
+    <h2><a href="www.instagram.com/taramakes"> <i class="fab fa-instagram"></i></a></h2>
+  </div>
 
-    <article>
-      <h3>What intrigued you to Design & why did you choose the field you are in now?</h3>
-      <p>I became interested in Design after reading just the first chapter of "The Design Of Everyday Things" by Don Norman early in my freshman year of college. I was an undeclared major at the time and the book resonated with me deeply. I originally wanted
-        to work in industrial product design, but the field is slow-moving, full of unsustainable plastic s***, and male-dominated. Oh and Davis doesn't have an emphasis in it yet. Despite some parallel sustainability and diversity issues in digital product
-        design, I feel more at home working on the web and have been able to push past certain insecurities around my own intelligence and begin to learn not only how to conduct UX research but also how to code.</p>
+  <article>
+    <h3>What intrigued you to Design & why did you choose the field you are in now?</h3>
+    <p>I became interested in Design after reading just the first chapter of "The Design Of Everyday Things" by Don Norman early in my freshman year of college. I was an undeclared major at the time and the book resonated with me deeply. I originally wanted to work in industrial product design, but the field is slow-moving, full of unsustainable plastic s***, and male-dominated. Oh and Davis doesn't have an emphasis in it yet. Despite some parallel sustainability and diversity issues in digital product design, I feel more at home working on the web and have been able to push past certain insecurities around my own intelligence and begin to learn not only how to conduct UX research but also how to code.</p>
 
-      <h3>What have been your biggest struggles of your career?</h3>
-      <p>One of the biggest struggles of my career has been coping with mental health interruptions while maintaining excellence school and work. As someone who identifies as agender, juggling the gendered expectations of working in tech has also been complicated
-        and challenging.</p>
+    <h3>What have been your biggest struggles of your career?</h3>
+    <p>One of the biggest struggles of my career has been coping with mental health interruptions while maintaining excellence school and work. As someone who identifies as agender, juggling the gendered expectations of working in tech has also been complicated and challenging.</p>
 
-      <h3>What have your experiences been like as a person of color in the design industry? Does those experiences shape how you solve design-related problems?</h3>
-      <p>N/A</p>
+    <h3>What have your experiences been like as a person of color in the design industry? Does those experiences shape how you solve design-related problems?</h3>
+    <p>N/A</p>
 
-      <h3>How can design be more accommodating to underrepresented populations of people?</h3>
-      <p>Design can be more accommodating to underrepresented populations of people by using the research tools we already have to improve conversion rate and interaction experiences. By actively seeking out marginalized groups and asking for their opinions
-        and experiences, dumb ideas are more likely to get caught and filtered out. We can also improve diversity of product teams and the sense of safety and acceptance people on the team feel. When someone from your own project or organization can point
-        out something before you even reach the research stage, it saves everyone time, money, and headache/heartache.</p>
-    </article>
-  </section>
+    <h3>How can design be more accommodating to underrepresented populations of people?</h3>
+    <p>Design can be more accommodating to underrepresented populations of people by using the research tools we already have to improve conversion rate and interaction experiences. By actively seeking out marginalized groups and asking for their opinions and experiences, dumb ideas are more likely to get caught and filtered out. We can also improve diversity of product teams and the sense of safety and acceptance people on the team feel. When someone from your own project or organization can point out something before you even reach the research stage, it saves everyone time, money, and headache/heartache.</p>
+      </article>
+</section>
 
-  <script>
-    /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
-    function myFunction() {
-      document.getElementById("myDropdown").classList.toggle("show");
-    }
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
 
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function(e) {
-      if (!e.target.matches('.dropbtn')) {
-        var myDropdown = document.getElementById("myDropdown");
-        if (myDropdown.classList.contains('show')) {
-          myDropdown.classList.remove('show');
-        }
-      }
-    }
-  </script>
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 
   <footer>
-    <a href="https://fxtzhou.github.io/des157/projects/final/about.html">About</a>
-    <a href="https://vivmokona.github.io/des157/final/contact/index.html">Contact</a>
+    <a href="https://fxtzhou.github.io/des157/projects/final/index.html">About</a>
+    <a href="contact/index.html">Contact</a>
     <a href="">Privacy Policy</a>
     <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>
     <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>

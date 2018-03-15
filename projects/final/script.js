@@ -39,3 +39,5 @@ CanvasJS.addColorSet("theme", [
   });
   chart.render();
 }
+
+/* New Nav JS */
