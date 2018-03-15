@@ -76,6 +76,46 @@
   }
 }
 
+/*One Page Scroll Styles*/
+.wrapper {
+  height: 100% !important;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.page {
+  top: 2%;
+}
+
+.main {
+  float: left;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.arrow {
+  position: fixed;
+  bottom: 75px;
+  right: 7px;
+}
+
+.bounce {
+  animation: bounce 5s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
 html {
   height: 100%;
 }
