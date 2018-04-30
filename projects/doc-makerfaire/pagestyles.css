@@ -31,6 +31,39 @@
   }
 }
 
+@keyframes colorshift2 {
+  0% {
+    color: #24aecc;
+  }
+  11% {
+    color: #245bcc
+  }
+  22% {
+    color: #3c24cc;
+  }
+  33% {
+    color: #9324cc;
+  }
+  44% {
+    color: #cc2478;
+  }
+  55% {
+    color: #cc2424;
+  }
+  66% {
+    color: #cc5b24;
+  }
+  77% {
+    color: #ccbe24;
+  }
+  88% {
+    color: #24cc73;
+  }
+  100% {
+    color: #2493cc;
+  }
+}
+
 body {
 
   font-family: 'Roboto', sans-serif;
@@ -55,7 +88,9 @@ margin: auto;
 float: left;
 max-width: 25%;
 text-align: center;
+position: fixed;
 }
+
 
 img {
   width: 200px;
@@ -91,8 +126,13 @@ a {
   width: 1.5in;
   padding: 16px;
   margin-top: 2px;
-  text-align: center;
   display: inline-block;
+}
+
+a:hover {
+  transition: color 20s linear;
+  animation: colorshift2 30s infinite;
+  transition-timing-function: ease-in;
 }
 
 h1 {
