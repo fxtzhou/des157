@@ -79,14 +79,15 @@ section {
 article {
   background-color: white;
   margin: auto;
-  width: 50%;
+  width: 55%;
   margin-bottom: 5%;
+  margin-right: 15%;
 }
 
 .profile{
-margin: auto;
+margin: auto 2.5%;
 float: left;
-max-width: 25%;
+max-width: 30%;
 text-align: center;
 position: fixed;
 }
@@ -155,6 +156,6 @@ h3 {
 }
 
 p {
-  font-size: 1vw;
-  line-height: 150%;
+  font-size: 1.25vw;
+  line-height: 160%;
 }
