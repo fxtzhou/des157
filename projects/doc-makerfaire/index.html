@@ -13,80 +13,25 @@
 	<link href='onepage-scroll.css' rel='stylesheet' type='text/css'>
 	<script src="canvasjs.min.js"></script>
 	<link href='styles.css' rel='stylesheet'>
-	<style>
-		.sidenav {
-			height: 100%;
-			width: 0;
-			position: fixed;
-			z-index: 1;
-			top: 0;
-			right: 0;
-			background-color: #111;
-			overflow-x: hidden;
-			transition: 0.5s;
-			padding-top: 60px;
-		}
-
-		.sidenav a {
-			padding: 8px 8px 8px 32px;
-			text-decoration: none;
-			font-size: 25px;
-			color: #818181;
-			display: block;
-			transition: 0.3s;
-		}
-
-		.sidenav a:hover {
-			color: #f1f1f1;
-		}
-
-		.sidenav .closebtn {
-			position: absolute;
-			top: 0;
-			right: 25px;
-			font-size: 36px;
-			margin-left: 50px;
-		}
-
-		#main {
-			position: absolute;
-			top: -15px;
-			right: 0;
-			transition: margin-left .5s;
-			padding: 16px;
-		}
-
-		/*Changes inside nav*/
-
-		@media screen and (max-height: 450px) {
-			.sidenav {
-				padding-top: 15px;
-			}
-			.sidenav a {
-				font-size: 18px;
-			}
-		}
-	</style>
 </head>
 
 <body>
 	<div id="mySidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<a href="https://fxtzhou.github.io/des157/projects/final/index.html">Home</a>
+  <a href="index.html">Home</a>
 		<a class="active" href="https://vivmokona.github.io/des157/final/index.html">Map</a>
-				<a href="https://vivmokona.github.io/des157/final/profile/form.html">Profile</a>
-		<a href="https://fxtzhou.github.io/des157/projects/final/index.html">About</a>
-		<a href="https://vivmokona.github.io/des157/final/contact/index.html">Contact</a>
+				<a href="profile/form.html">Profile</a>
+		<a href="about/about.html">About</a>
+		<a href="contact/contact.html">Contact</a>
 	</div>
 
 	<div id="main">
 		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 	</div>
 
-<div class="header">
-	<img src="images/logo.png" alt="logo" width="50">
-	<h4>Designers of Color Map</h4>
-</div>
+<header>
+	<a href="index.html">Designers of Color Map</a>
+</header>
 
 	<div id="container">
 		<section id="cta">
@@ -102,17 +47,19 @@
 
 <div id="linkcontainer">
 			<a id="mainlinks" href="https://vivmokona.github.io/des157/final/index.html">View Map</a>
-				<a id="mainlinks" href="https://vivmokona.github.io/des157/final/profile/form.html">Make a Profile</a>
+				<a id="mainlinks" href="profile/form.html">Make a Profile</a>
 
 		</section>
 
 	</div>
 </div>
 
-	<footer>
-		<a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>
-		<a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
-	</footer>
+<footer>
+	<a href="about/about.html">About</a>
+	<a href="contact/contact.html">Contact</a>
+	<a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>
+	<a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+</footer>
 	<script>
 		function openNav() {
 			document.getElementById("mySidenav").style.width = "250px";
